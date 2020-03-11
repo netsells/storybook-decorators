@@ -1,6 +1,6 @@
 {
     "name": "@netsells/storybook-decorators",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "index.js",
     "license": "MIT",
     "publishConfig": {
@@ -8,5 +8,8 @@
     },
     "devDependencies": {
         "@netsells/eslint-config": "^3.7.2"
-    }
+    },
+    "files": [
+        "decorators/"
+    ]
 }
