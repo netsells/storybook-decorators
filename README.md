@@ -6,9 +6,13 @@ This module provides a few helper decorators for your stories.
 
 The following decorators are available:
 
-### CenteredDecorator
+### VerticallyCenteredDecorator
 
 Vertically centers your story markup in the view.
+
+### HorizontallyCenteredDecorator
+
+Horizontally centers your story markup in the view.
 
 ### ContainerDecorator
 
@@ -25,17 +29,16 @@ yarn add @netsells/storybook-decorators
 Enable globally:
 
 ```js
-import { CenteredDecorator, ContainerDecorator } from '@netsells/storybook-decorators';
+import { VerticallyCenteredDecorator } from '@netsells/storybook-decorators';
 import { addDecorator } from '@storybook/vue';
 
-addDecorator(ContainerDecorator);
-addDecorator(CenteredDecorator);
+addDecorator(VerticallyCenteredDecorator);
 ```
 
 Enable in a single story:
 
 ```js
-import { CenteredDecorator, ContainerDecorator } from '@netsells/storybook-decorators';
+import { VerticallyCenteredDecorator } from '@netsells/storybook-decorators';
 import MyComponent from '../../../components/MyComponent';
 
 export const myComponent = () => ({
@@ -45,7 +48,7 @@ export const myComponent = () => ({
 });
 
 myComponent.story = {
-    decorators: [CenteredDecorator, ContainerDecorator],
+    decorators: [VerticallyCenteredDecorator],
 };
 ```
 

@@ -1,7 +1,11 @@
 const ContainerDecorator = require('./decorators/ContainerDecorator');
-const CenteredDecorator = require('./decorators/CenteredDecorator');
+const HorizontallyCenteredDecorator = require('./decorators/HorizontallyCenteredDecorator');
+const VerticallyCenteredDecorator = require('./decorators/VerticallyCenteredDecorator');
 
 module.exports = {
     ContainerDecorator,
-    CenteredDecorator,
+    HorizontallyCenteredDecorator,
+    VerticallyCenteredDecorator,
+    // Deprecated:
+    CenteredDecorator: VerticallyCenteredDecorator,
 };
